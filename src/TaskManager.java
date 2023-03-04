@@ -6,21 +6,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class TaskManager {
-    static String FILE_NAME = "tasks.csv";
-    static String[] options = {"add", "remove,", "list", "exit"};
+public class TaskManager{
 
-    static String[][] tasks;
-
-    public static void printOptions(String[] tab) {
-        System.out.println(Color.BLUE);
-        System.out.println("Please select an option: " + Color.BLUE);
-        for (String option : tab) {
-            System.out.println(option);
-        }
-
-
-    }
 
     public static List<Task> loadFileToList() {
 
